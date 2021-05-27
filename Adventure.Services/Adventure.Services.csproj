@@ -3,12 +3,21 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <ApplicationIcon />
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <StartupObject />
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <OutputPath>D:\WorkSpace\HoaiNN1\AdventureGame\Adventure\obj\Debug\</OutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adventure.Commom\Adventure.Commom.csproj" />
+    <ProjectReference Include="..\Adventure.Data\Adventure.Data.csproj" />
+  </ItemGroup>
 
 </Project>
